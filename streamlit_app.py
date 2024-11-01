@@ -24,22 +24,23 @@ def require():
     st.write("Requiremets Section")
 
 def agent():
-    st.write("""
-**Acknowledgment**
-
-We would like to express our deepest gratitude to Nick Tan from GovTech, who was the guiding force and guru behind the successful completion of our LLM Project. 
-Without his committed guidance and unwavering support, this journey would not have been possible.
-
-Nick Tan not only taught us the intricacies of data embedding but also inspired us to immerse ourselves fully in this field. 
-His expertise, patience, and encouragement kept us motivated and on the right path throughout this project. 
-His passion for knowledge and his dedication to sharing it have left an indelible mark on our learning experience.
-
-Thank you, Nick Tan, for your invaluable contributions and for being such an exceptional mentor. 
-This success is a testament to your dedication, and we are truly grateful to have had the privilege of learning under your guidance.
-""")
+    st.write("Agents for submissions Checkig...")
+    
 
 def ack():
-    st.write("Acknoledgements Section")
+    st.write("""
+            **Acknowledgment**
+            
+            We would like to express our deepest gratitude to Nick Tan from GovTech, who was the guiding force and guru behind the successful completion of our LLM Project. 
+            Without his committed guidance and unwavering support, this journey would not have been possible.
+            
+            Nick Tan not only taught us the intricacies of data embedding but also inspired us to immerse ourselves fully in this field. 
+            His expertise, patience, and encouragement kept us motivated and on the right path throughout this project. 
+            His passion for knowledge and his dedication to sharing it have left an indelible mark on our learning experience.
+            
+            Thank you, Nick Tan, for your invaluable contributions and for being such an exceptional mentor. 
+            This success is a testament to your dedication, and we are truly grateful to have had the privilege of learning under your guidance.
+            """)
 
 # Check radio button selection
 if options == "About":
