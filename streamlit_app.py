@@ -24,7 +24,7 @@ def require():
     st.write("Requiremets Section")
 
 def agent():
-    st.write("Agents for submissions Checkig...")
+    st.write("Agents for submissions Checking...")
     
 
 def ack():
