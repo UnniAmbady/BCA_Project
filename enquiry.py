@@ -3,8 +3,8 @@ from openai import OpenAI
 
 def enquire(client):
     # Create an OpenAI client.
-    st.write( "Here the Companies Cna make any Generic Enquiry about the BCA Submission requirement.\n
-            The answers are based on data that is available in Open Domain to Public\n ")
+    
+    #st.write( "Here the Companies Cna make any Generic Enquiry about the BCA Submission requirement. ")
 
     # Create a session state variable to store the chat messages. This ensures that the
     # messages persist across reruns.
