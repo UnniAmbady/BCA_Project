@@ -10,10 +10,11 @@ st.write( "This is a Agentic Help Tool for Submissins to BCA..")
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
 #openai_api_key = st.text_input("OpenAI API Key", type="password")
 openai_api_key = st.secrets["openai"]["secret_key"]
+client = OpenAI(api_key=openai_api_key)
 
-def enquire():
+def enquire(client):
     # Create an OpenAI client.
-    client = OpenAI(api_key=openai_api_key)
+    
 
     # Create a session state variable to store the chat messages. This ensures that the
     # messages persist across reruns.
@@ -54,5 +55,5 @@ def enquire():
 if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
 else:
-    enquire()
+    enquire(client)
     
