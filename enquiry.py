@@ -4,7 +4,7 @@ from openai import OpenAI
 def enquire(client):
     # Create an OpenAI client.
     # Define the context
-    context = "BCA Building Regulation and BCA Submission Requirements"
+    context = "Building and Construction Authority(BCA),Singapore Building Regulations and BCA Submission Requirements. Corenet X platform. "
 
     st.write( "Here the Companies can make any Generic Enquiry about the BCA Submission requirement. ")
 
