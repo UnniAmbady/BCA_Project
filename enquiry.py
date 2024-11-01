@@ -4,12 +4,11 @@ from openai import OpenAI
 def enquire(client):
     # Create an OpenAI client.
     # Define the context
-    context = "Building and Construction Authority(BCA),Singapore Building Regulations and BCA Submission Requirements. Corenet X platform. "
+    context = "Building and Construction Authority (BCA), Singapore Building Regulations, and BCA Submission Requirements."
 
-    st.write( "Here the Companies can make any Generic Enquiry about the BCA Submission requirement. ")
-
-    st.write("Type a Key Work Pertaining to Buildings....\n" )
-    st.write("Example: ZEB, Piling or Green Mark or Ventillation etc....\n" )
+    st.write("Here, companies can make any general enquiry about BCA submission requirements.")
+    st.write("Type a keyword related to buildings...")
+    st.write("Examples: ZEB, piling, Green Mark, ventilation, etc.")
 
     # Create the clickable link
     #st.markdown(
