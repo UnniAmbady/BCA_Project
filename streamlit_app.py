@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("💬 BCA Project")
+st.title("💬 BCA Project ..🎈")
 st.write( "This is a Agentic Help Tool for Submissins to BCA..")
 
 # Ask user for their OpenAI API key via `st.text_input`.
