@@ -6,6 +6,15 @@ def enquire(client):
     
     st.write( "Here the Companies can make any Generic Enquiry about the BCA Submission requirement. ")
 
+    st.write(
+    "Click the link below to get the full information on BCA Submission requirements.\n"
+    "Clicking on the link will redirect you to the BCA website, and this app will be closed.")
+
+    # Create the clickable link
+    st.markdown(
+        "[BCA Submission Requirements](https://www1.bca.gov.sg/regulatory-info/building-control/corenet-x)",
+        unsafe_allow_html=True)
+
     # Create a session state variable to store the chat messages. This ensures that the
     # messages persist across reruns.
     if "messages" not in st.session_state:
