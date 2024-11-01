@@ -11,10 +11,7 @@ st.write( "This is a Agentic Help Tool for Submissins to BCA..")
 #openai_api_key = st.text_input("OpenAI API Key", type="password")
 openai_api_key = st.secrets["openai"]["secret_key"]
 
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
-
+def enquire():
     # Create an OpenAI client.
     client = OpenAI(api_key=openai_api_key)
 
@@ -52,3 +49,10 @@ else:
         with st.chat_message("assistant"):
             response = st.write_stream(stream)
         st.session_state.messages.append({"role": "assistant", "content": response})
+#end of function definision
+
+if not openai_api_key:
+    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
+else:
+    enquire()
+    
