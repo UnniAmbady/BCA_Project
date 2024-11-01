@@ -25,7 +25,7 @@ def require():
     st.write("This part allows BCA officers to drag and drop the latest revision in submission requirements.")
     st.write("The enquiry page will enhance its response based on the new set of information provided.")
 def agent():
-    st.write("**Agents** for Submissions Checking...")
+    st.write("**Agents** for Submissions Checking are AI enabled...")
     st.write("Companies can drag & drop their submissions here.")
     st.write("Integrated AI agents will perform the checking...")
     st.write("A report on compliance and deviations will be generated...")
