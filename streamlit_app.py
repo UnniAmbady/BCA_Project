@@ -13,10 +13,35 @@ st.write( "This is a Agentic Help Tool for Submissins to BCA..")
 openai_api_key = st.secrets["openai"]["secret_key"]
 client = OpenAI(api_key=openai_api_key)
 
+# Create radio buttons in a single row
+options = st.radio("Navigate", ["About", "Enquire", "Require", "Ack"], horizontal=True)
+
+# Define functions for "About", "Require", and "Ack"
+def about():
+    st.write("About Section")
+
+def require():
+    st.write("Require Section")
+
+def ack():
+    st.write("Ack Section")
+
+# Check radio button selection
+if options == "About":
+    about()
+elif options == "Require":
+    require()
+elif options == "Ack":
+    ack()
+elif options == "Enquire":
+    enquire(client)
+else:
+    st.write( "Waiting for you to test my APP")
+   
 
 
 if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
-    enquire(client)
+
+    
     
