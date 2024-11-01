@@ -3,7 +3,9 @@ from openai import OpenAI
 
 def enquire(client):
     # Create an OpenAI client.
-    
+    # Define the context
+    context = "BCA Building Regulation and BCA Submission Requirements"
+
     st.write( "Here the Companies can make any Generic Enquiry about the BCA Submission requirement. ")
 
     st.write(
@@ -30,7 +32,7 @@ def enquire(client):
     if prompt := st.chat_input("What is up?"):
 
         # Store and display the current prompt.
-        st.session_state.messages.append({"role": "user", "content": prompt})
+        st.session_state.messages.append({"role": "user", "content": context + prompt}) #UNNI 1Nov
         with st.chat_message("user"):
             st.markdown(prompt)
 
