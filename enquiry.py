@@ -4,7 +4,7 @@ from openai import OpenAI
 def enquire(client):
     # Create an OpenAI client.
     
-    st.write( "Here the Companies Cna make any Generic Enquiry about the BCA Submission requirement. ")
+    st.write( "Here the Companies can make any Generic Enquiry about the BCA Submission requirement. ")
 
     # Create a session state variable to store the chat messages. This ensures that the
     # messages persist across reruns.
@@ -27,7 +27,7 @@ def enquire(client):
 
         # Generate a response using the OpenAI API.
         stream = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model= "gpt-4o-mini",
             messages=[
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages
