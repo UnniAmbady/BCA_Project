@@ -14,7 +14,7 @@ openai_api_key = st.secrets["openai"]["secret_key"]
 client = OpenAI(api_key=openai_api_key)
 
 # Create radio buttons in a single row
-options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent"], horizontal=True)
+options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], horizontal=True)
 
 # Define functions for "About", "Require", and "Agent"
 def about():
@@ -26,6 +26,9 @@ def require():
 def agent():
     st.write("Agentic will Analize your submission")
 
+def ack():
+    st.write("Acknoledgements Section")
+
 # Check radio button selection
 if options == "About":
     about()
@@ -35,6 +38,8 @@ elif options == "Agent":
     agent()
 elif options == "Enquire":
     enquire(client)
+elif options == "Ack":
+    ack()
 else:
     st.write( "Waiting for you to test my APP")
    
