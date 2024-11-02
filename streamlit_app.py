@@ -4,7 +4,7 @@ from enquiry import enquire
 #from about import about
 
 # Show title and description.
-st.title("🧱 BCA Project ..🎈")
+st.title(" 🎈BCA Project\n🧱🧱🧱🧱🧱🧱🧱🧱")
 st.write( "AI Champions Bootcamp 2024.")
 st.write( "**Agent-based Analyzer for Technical and Regulatory Requirements Checks**")
 
