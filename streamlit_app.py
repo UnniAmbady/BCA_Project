@@ -20,8 +20,8 @@ options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], 
 
 # Define functions for "About", "Require", and "Agent"
 def about():
-    st.write("**About BCA Project**")
-    #st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
+    #st.write("**About BCA Project**")
+    st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
 
 def require():
     st.write("**Requirements Section**")
