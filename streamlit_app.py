@@ -1,6 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 from enquiry import enquire
+from about import about
 
 # Show title and description.
 st.title("💬 BCA Project ..🎈")
@@ -18,8 +19,8 @@ client = OpenAI(api_key=openai_api_key)
 options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], horizontal=True)
 
 # Define functions for "About", "Require", and "Agent"
-def about():
-    st.write("**About BCA Project**")
+#def about():
+#    st.write("**About BCA Project**")
 
 def require():
     st.write("**Requirements Section**")
