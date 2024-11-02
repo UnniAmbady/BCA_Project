@@ -5,8 +5,8 @@ from enquiry import enquire
 
 # Show title and description.
 st.title("💬 BCA Project ..🎈")
-st.write( "This is the solution for AI Champions Bootcamp 2024.")
-st.write( "Agent-based Analyzer for Technical and Regulatory Requirements Checks")
+st.write( "AI Champions Bootcamp 2024.")
+st.write( "**Agent-based Analyzer for Technical and Regulatory Requirements Checks**")
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
