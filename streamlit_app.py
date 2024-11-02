@@ -4,7 +4,14 @@ from enquiry import enquire
 #from about import about
 
 # Show title and description.
-st.title(" 🎈BCA Project\n🧱🧱🧱🧱🧱🧱🧱🧱")
+st.title(" 🎈**BCA Project**")
+# Use HTML and CSS to adjust spacing between emojis
+st.markdown(
+    """
+    <h1 style="letter-spacing: -0.2em;">🧱🧱🧱🧱🧱🧱🧱🧱</h1>
+    """,
+    unsafe_allow_html=True
+)
 st.write( "AI Champions Bootcamp 2024.")
 st.write( "**Agent-based Analyzer for Technical and Regulatory Requirements Checks**")
 
