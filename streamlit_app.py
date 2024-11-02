@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from openai import OpenAI
 from enquiry import enquire
 #from about import about
@@ -21,6 +22,30 @@ options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], 
 # Define functions for "About", "Require", and "Agent"
 def about():
     st.write("**About BCA Project**")
+    sway_iframe = """
+                <style>
+                    .responsive-iframe {
+                        position: relative;
+                        width: 100%;
+                        height: 0;
+                        padding-bottom: 56.25%; /* 16:9 ratio */
+                    }
+                    .responsive-iframe iframe {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                </style>
+                <div class="responsive-iframe">
+                    <iframe src="https://sway.cloud.microsoft/s/vQFtLnQTDaYLqiAM/embed" 
+                    frameborder="0" marginheight="0" marginwidth="0" 
+                    sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" 
+                    scrolling="no" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+                </div>
+                """
+
+# Display the iframe in the Streamlit app
+components.html(sway_iframe, height=300)  # height can be adjusted
 
 def require():
     st.write("**Requirements Section**")
