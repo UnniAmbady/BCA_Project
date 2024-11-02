@@ -21,6 +21,7 @@ options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], 
 # Define functions for "About", "Require", and "Agent"
 def about():
     #st.write("**About BCA Project**")
+    show_popup1 = st.checkbox("GPT Model Used")
     model= "gpt-4-turbo"
     if show_popup1:
         st.code(f" GPT API Model used is =\n{model}", language="text")
