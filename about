@@ -2,7 +2,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def about():
-    st.write("About the BCA Project"
+    st.write("About the BCA Project")
+'''
     # Embed Microsoft Sway iframe in Streamlit
     sway_iframe = """
     <iframe width="760px" height="500px" src="https://sway.cloud.microsoft/s/vQFtLnQTDaYLqiAM/embed" 
@@ -14,3 +15,4 @@ def about():
     
     # Display the iframe in the Streamlit app
     components.html(sway_iframe, height=500)
+'''
