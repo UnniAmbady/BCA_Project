@@ -23,9 +23,6 @@ def about():
     st.write("**About BCA Project**")
     #st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
 
-# Display the iframe in the Streamlit app
-components.html(sway_iframe, height=300)  # height can be adjusted
-
 def require():
     st.write("**Requirements Section**")
     st.markdown('[BCA Submission Requirements](https://www1.bca.gov.sg/regulatory-info/building-control/building-plan-submission)')
