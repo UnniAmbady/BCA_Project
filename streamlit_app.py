@@ -20,14 +20,15 @@ options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], 
 
 # Define functions for "About", "Require", and "Agent"
 def about():
-    #st.write("**About BCA Project**")
-    st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
+    st.write("**About BCA Project**")
+    #st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
 
 # Display the iframe in the Streamlit app
 components.html(sway_iframe, height=300)  # height can be adjusted
 
 def require():
     st.write("**Requirements Section**")
+    st.markdown('[BCA Submission Requirements](https://www1.bca.gov.sg/regulatory-info/building-control/building-plan-submission)')
     st.write("This part allows BCA officers to drag and drop the latest revision in submission requirements.")
     st.write("The enquiry page will enhance its response based on the new set of information provided.")
 def agent():
