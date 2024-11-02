@@ -29,7 +29,7 @@ options = st.radio("Navigate", ["About", "Enquire", "Require", "Agent", "Ack"], 
 def about():
     #st.write("**About BCA Project**")
     show_popup1 = st.checkbox("GPT Model Used")
-    model= "gpt-4-turbo"
+    model= ""gpt-4o-mini""
     if show_popup1:
         st.code(f" GPT API Model used is =\n{model}", language="text")
     st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
