@@ -1,8 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-def about():
-    
+def about():    
     st.write("**About BCA Project**")
 '''
     # Embed Microsoft Sway iframe in Streamlit
