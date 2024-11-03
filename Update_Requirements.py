@@ -1,3 +1,22 @@
+"""
+File: Update_Requirements.py
+AI Champions Bootcamp 2024
+BCA Project
+Agent-Based Analyzer for Technical and Regulatory Requirements Checks
+
+Authors: Unni & Woon Wei (BCA)
+Date Created: 2024-10-01
+Last Updated: 2024-11-03
+Version: 1.2
+
+Functions:
+- UpdateRequirements(): Allows authorized users to upload a file, and GPT responses are fine-tuned to incorporate new knowledge acquired from the attachments.
+
+Notes:
+- Assumption: This app is for testing purposes only, so any content in .txt format can be uploaded.
+- Example: If you upload a story about Tom, Dick, and Harry, you can ask any questions related to the story and receive accurate answers based on the provided text.
+"""
+
 import streamlit as st
 #from openai import OpenAI
 
