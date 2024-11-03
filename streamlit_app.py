@@ -13,7 +13,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.write( "AI Champions Bootcamp 2024.")
+st.write( "AI Champions Bootcamp 2024..")
 st.write( "**Agent-based Analyzer for Technical and Regulatory Requirements Checks**")
 
 # Ask user for their OpenAI API key via `st.text_input`.
