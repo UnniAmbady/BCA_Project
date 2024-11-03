@@ -2,7 +2,10 @@ import streamlit as st
 #from openai import OpenAI
 
 def UpdateRequirements( client):
-         st.write("Inside Update_Requirements")
+         st.write("📄 Add New BCA Regulatory Requirements.")
+         st.write( "Authorised BCA officer can upload new Requlation here– GPT will update its answer!! " )
+         
+         # The following line will force the conversation context to BCA related only.
          context = "Building and Construction Authority (BCA), Singapore Building Regulations, and BCA Submission Requirements.\n"
          # Let the user upload a file via `st.file_uploader`.
          uploaded_file = st.file_uploader( "Upload a document (.txt or .md)", type=("txt", "md") )
