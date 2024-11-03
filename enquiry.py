@@ -1,3 +1,26 @@
+"""
+File: enquiry.py
+AI Champions Bootcamp 2024
+BCA Project
+Agent-Based Analyzer for Technical and Regulatory Requirements Checks
+
+Authors: Unni & Woon Wei (BCA)
+Date Created: 2024-10-01
+Last Updated: 2024-11-03
+Version: 1.2
+
+Functions:
+- enquire(): User input is augmented with a context setting to BCA Requlatory and passed to GPT. 
+            Reponses are returned to user without checking.
+
+Notes:
+- Assumption: This app is for testing purposes only, So response content checking is not very important at this stage of POC.
+- Example: User input : Velocity of Wind; the respose will be ......In Singapore, building designs must account for wind loads 
+            as specified in the Singapore Standard SS EN 1991-1-4: Eurocode 1—Actions on Structures.
+            This ability is achived through paraphrasing the user input with context setting.
+"""
+
+
 import streamlit as st
 from openai import OpenAI
 
