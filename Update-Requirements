@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-def Update_Requirements( client):
+def UpdateRequirements( client):
 
     context = "Building and Construction Authority (BCA), Singapore Building Regulations, and BCA Submission Requirements.\n"
     # Let the user upload a file via `st.file_uploader`.
