@@ -2,7 +2,7 @@ import streamlit as st
 #from openai import OpenAI
 
 def UpdateRequirements( client):
-     st.write_stream("INside Update_Requirements")
+     st.write("Inside Update_Requirements")
 '''
     context = "Building and Construction Authority (BCA), Singapore Building Regulations, and BCA Submission Requirements.\n"
     # Let the user upload a file via `st.file_uploader`.
