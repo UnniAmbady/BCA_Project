@@ -3,7 +3,7 @@ import streamlit as st
 
 def UpdateRequirements( client):
      st.write("Inside Update_Requirements")
-'''
+"""
     context = "Building and Construction Authority (BCA), Singapore Building Regulations, and BCA Submission Requirements.\n"
     # Let the user upload a file via `st.file_uploader`.
     uploaded_file = st.file_uploader( "Upload a document (.txt or .md)", type=("txt", "md") )
@@ -35,4 +35,4 @@ def UpdateRequirements( client):
 
         # Stream the response to the app using `st.write_stream`.
         st.write_stream(stream)
-'''
+"""
