@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 from enquiry import enquire
-from Update-Requirements UpdateRequirements
+from Update_Requirements UpdateRequirements
 #from about import about
 
 # Show title and description.
