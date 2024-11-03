@@ -1,3 +1,31 @@
+"""
+File: stremlit_app.py
+AI Champions Bootcamp 2024
+BCA Project
+Agent-Based Analyzer for Technical and Regulatory Requirements Checks
+
+Authors: Unni & Woon Wei (BCA)
+Date Created: 2024-10-01
+Last Updated: 2024-11-03
+Version: 1.2
+
+Functions:
+- __main(): This is the main function from where the various pages are slected using a Radio-button Selector.
+            The client variable is created here once at the start and it is passed to other modules as a parameter.
+
+Notes:
+- Assumption: This Page is created from Streamlit Example and modified to our needs
+            The OpenAI Scret Key is hiddedn in the Scret Vault of Streamlit.
+            Therefore, any user geting the link can straight away use the App
+            Payment to OpenAI for usage is done by Unni.
+            
+- Example: The Title and Project Name stays in the display all the while using this APP
+            The lower part display is updated based on the Radio Button Selection
+            ["About", "Enquire", "Require", "Agent", "Ack"]
+            
+"""
+
+
 import streamlit as st
 from openai import OpenAI
 from enquiry import enquire
