@@ -1,6 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 from enquiry import enquire
+from Update-Requirements UpdateRequirements
 #from about import about
 
 # Show title and description.
@@ -34,7 +35,7 @@ def about():
         st.code(f" GPT API Model used is =\n{model}", language="text")
     st.markdown('[**About the Project**](https://sway.cloud.microsoft/vQFtLnQTDaYLqiAM?ref=Link)')
 
-def require():
+def require(): #Now Not in Use as new module is added
     st.write("**Requirements Section**")
     st.markdown('[BCA Submission Requirements](https://www1.bca.gov.sg/regulatory-info/building-control/building-plan-submission)')
     st.write("This part allows BCA officers to drag and drop the latest revision in submission requirements.")
@@ -66,7 +67,8 @@ def ack():
 if options == "About":
     about()
 elif options == "Require":
-    require()
+    UpdateRequirements(client)
+    #require()
 elif options == "Agent":
     agent()
 elif options == "Enquire":
