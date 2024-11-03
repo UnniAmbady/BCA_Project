@@ -67,8 +67,8 @@ def ack():
 if options == "About":
     about()
 elif options == "Require":
-    UpdateRequirements(client)
-    #require()
+    #UpdateRequirements(client)
+    require()
 elif options == "Agent":
     agent()
 elif options == "Enquire":
