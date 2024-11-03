@@ -18,6 +18,7 @@ def UpdateRequirements( client):
              disabled=not uploaded_file,
          )'''
          question = st.chat_input("What is up?")
+         st.write("Will answer only if you add as file📄.")
          if uploaded_file and question:
      
              # Process the uploaded file and question.
