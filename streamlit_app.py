@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 from enquiry import enquire
-#from Update_Requirements import UpdateRequirements
+from Update_Requirements import UpdateRequirements
 #from about import about
 
 # Show title and description.
@@ -67,8 +67,8 @@ def ack():
 if options == "About":
     about()
 elif options == "Require":
-    #UpdateRequirements(client)
-    require()
+    UpdateRequirements(client)
+    #require()
 elif options == "Agent":
     agent()
 elif options == "Enquire":
